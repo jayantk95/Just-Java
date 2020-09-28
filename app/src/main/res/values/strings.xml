@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Just Java</string>
+
+    <!--Hint for EditText view  -->
+    <string name="name_hint">Name</string>
+
+    <!-- Title of Toppings list    -->
+    <string name="toppings">Toppings</string>
+
+    <!--    Whipped cream checkbox text-->
+    <string name="whipped_cream">Whipped Cream</string>
+
+    <!--    Chocolate CheckBox text-->
+    <string name="chocolate">Chocolate</string>
+
+    <!--    Quantity of coffees -->
+    <string name="quantity">Quantity</string>
+
+    <!--    Decrement quantity button -->
+    <string name="decrement_quantity">-</string>
+
+    <!--    Initial quantity of 1 coffee-->
+    <string name="initial_quantity">1</string>
+
+    <!-- Increment quantity button -->
+    <string name="increment_quantity">+</string>
+
+    <!--    Order summary Header -->
+    <string name="order_summary">Order Summary</string>
+
+    <!--    Order button title -->
+    <string name="order_button">Order</string>
+
+</resources>
