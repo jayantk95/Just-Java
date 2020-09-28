@@ -25,9 +25,6 @@
     <!-- Increment quantity button -->
     <string name="increment_quantity">+</string>
 
-    <!--    Order summary Header -->
-    <string name="order_summary">Order Summary</string>
-
     <!--    Order button title -->
     <string name="order_button">Order</string>
 
