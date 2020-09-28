@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.NumberFormat;
+
 /**
  * This app displays an order form to order coffee.
  */
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         if (quantity < 100) {
             quantity++;
         } else {
-            Toast.makeText(this, "Too many cups of coffee", Toast.LENGTH_SHORT).show();
+            //Toast when trying to order more than maximum number of coffees
+            Toast.makeText(this, getString(R.string.too_many_coffees), Toast.LENGTH_SHORT).show();
         }
         displayQuantity(quantity);
 
@@ -39,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         if (quantity > 1) {
             quantity--;
         } else {
-            Toast.makeText(this, "Too few cups of coffee", Toast.LENGTH_SHORT).show();
+            //Toast when trying to order less than minimum number of coffees
+            Toast.makeText(this, getString(R.string.too_few_coffees), Toast.LENGTH_SHORT).show();
         }
         displayQuantity(quantity);
     }
@@ -99,11 +103,13 @@ public class MainActivity extends AppCompatActivity {
      * @return text summary
      * */
     private String createOrderSummary(String customerName, boolean hasWhippedCream, boolean hasChocolate) {
-
-        String message = "Name: " + customerName + " \nAdd whipped cream? " + hasWhippedCream;
-        message += "\nAdd chocolate? " + hasChocolate;
-        message += "\nQuantity: " + quantity + "\nTotal: \u20B9" +
-                calculatePrice(hasWhippedCream, hasChocolate) + "\nThank you!";
+        String message = getString(R.string.order_summary_name) + " " + customerName;
+        message += "\n" + getString(R.string.order_summary_whipped_cream) + " " + hasWhippedCream;
+        message += "\n" + getString(R.string.order_summary_chocolate) + " " + hasChocolate ;
+        message += "\n" + getString(R.string.order_summary_quantity) + " " + quantity;
+        message += "\n" + getString(R.string.order_summary_total) + " "
+                + NumberFormat.getInstance().format(calculatePrice(hasWhippedCream, hasChocolate));
+        message += "\n" + getString(R.string.thank_you);
         return message;
     }
 

@@ -28,4 +28,28 @@
     <!--    Order button title -->
     <string name="order_button">Order</string>
 
+    <!--    Local stings for Java files-->
+
+    <!--    Toast for trying to order less than minimum number of coffees-->
+    <string name="too_few_coffees">Too few cups of coffee</string>
+
+    <!--    Toast for trying to order more than maximum number of coffees-->
+    <string name="too_many_coffees">Too many cups of coffee</string>
+
+    <!--    Thank you in order summary-->
+    <string name="thank_you">Thank You!</string>
+
+    <!--    Order summary customer name-->
+    <string name="order_summary_name">Name:</string>
+    <!--    Add whipped cream in order summary-->
+    <string name="order_summary_whipped_cream">Add whipped cream?</string>
+
+    <!--    Add chocolate in order summary-->
+    <string name="order_summary_chocolate">Add chocolate?</string>
+
+    <!--    Total amount in order summary-->
+    <string name="order_summary_total">Total:</string>
+
+    <!--    Order summary Quantity-->
+    <string name="order_summary_quantity">Quantity:</string>
 </resources>
